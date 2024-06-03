@@ -1,0 +1,37 @@
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+services:
+  ero.api:
+    image: ${DOCKER_REGISTRY-}eroapi
+    depends_on:
+     - "ero.database"
+    build:
+      context: .
+      dockerfile: ero.API/Dockerfile
+    ports:
+      - "7261:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5001
+      - ASPNETCORE_HTTPS_PORTS=7261
+      - ASPNETCORE_URLS=https://+:443
+    volumes:
+      - D:\ero:/app/Files:rw
+    networks:
+      - dev
+  ero.database:
+    image: postgres:latest
+    container_name: ero.database
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=eroContext
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./.containers/ero_db:/var/lib/postgresql/data
+    networks:
+      - dev

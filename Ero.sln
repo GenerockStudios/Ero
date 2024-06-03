@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ero.API", "Ero.API\Ero.API.csproj", "{8A5D64CE-633A-49A4-9AA1-3A7FA8CB76AE}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{82BBF487-4B6C-41CF-A125-3AAA8663D466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ero.Tests", "Ero.Tests\Ero.Tests.csproj", "{FD116451-A87E-48AB-A028-B32F0DBCF4C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A5D64CE-633A-49A4-9AA1-3A7FA8CB76AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5D64CE-633A-49A4-9AA1-3A7FA8CB76AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5D64CE-633A-49A4-9AA1-3A7FA8CB76AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5D64CE-633A-49A4-9AA1-3A7FA8CB76AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BBF487-4B6C-41CF-A125-3AAA8663D466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BBF487-4B6C-41CF-A125-3AAA8663D466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BBF487-4B6C-41CF-A125-3AAA8663D466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BBF487-4B6C-41CF-A125-3AAA8663D466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD116451-A87E-48AB-A028-B32F0DBCF4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD116451-A87E-48AB-A028-B32F0DBCF4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD116451-A87E-48AB-A028-B32F0DBCF4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD116451-A87E-48AB-A028-B32F0DBCF4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B55354CE-C47E-46FE-82AE-5F958ED85976}
+	EndGlobalSection
+EndGlobal

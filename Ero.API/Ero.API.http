@@ -1,0 +1,6 @@
+@Ero.API_HostAddress = http://localhost:5029
+
+GET {{Ero.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
